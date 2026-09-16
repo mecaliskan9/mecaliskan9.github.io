@@ -24,6 +24,8 @@ service:
   venue: Western Economic Association International Annual Conference
   year: '2026'
 leadership:
+- role: Coordinator, Dr.Tobacman Lab Reading Group
+  year: 2025–present
 - role: President, UD Economics Graduate Student Association
   year: 2025–present
 - role: President, UD Turkish American Student Association
