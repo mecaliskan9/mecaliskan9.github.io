@@ -9,7 +9,7 @@ params:
   tagline: ""
   affiliation: "PhD Candidate, Department of Economics, University of Delaware"
   address: "Department of Economics, Purnell Hall, University of Delaware, Newark, DE 19714"
-  cv: "https://drive.google.com/file/d/1Px6Evnd5VGGJs2TMdt6209h87B1CJlNc/view?usp=drive_link"
+  cv: "https://drive.google.com/drive/u/0/folders/1Rzakda_OOnK9KfvlTNGJdSCyTyUIfYjJ"
   social:
     linkedin: "https://www.linkedin.com/in/dermenes/"
     twitter: "https://x.com/mustafaudel"
@@ -31,7 +31,7 @@ menu:
       url: "/#teaching"
       weight: 20
     - name: CV
-      url: "https://drive.google.com/file/d/1Px6Evnd5VGGJs2TMdt6209h87B1CJlNc/view?usp=drive_link"
+      url: "https://drive.google.com/drive/u/0/folders/1Rzakda_OOnK9KfvlTNGJdSCyTyUIfYjJ"
       weight: 30
     - name: Contact
       url: "/#contact"
