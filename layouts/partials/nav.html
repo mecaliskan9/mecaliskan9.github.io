@@ -1,0 +1,14 @@
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a class="nav-name" href="{{ .Site.Home.RelPermalink }}#top">{{ .Site.Params.author }}</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </label>
+    <ul class="nav-links">
+      {{ range .Site.Menus.main }}
+      <li><a href="{{ .URL | relURL }}"{{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+</nav>

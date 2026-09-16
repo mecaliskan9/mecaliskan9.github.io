@@ -1,0 +1,7 @@
+{{ define "main" }}
+<article class="page">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  <p class="back-link"><a href="{{ .Site.Home.RelPermalink }}">&larr; Back to homepage</a></p>
+</article>
+{{ end }}

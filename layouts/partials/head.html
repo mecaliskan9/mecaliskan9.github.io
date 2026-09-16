@@ -1,0 +1,18 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.description }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <meta name="author" content="{{ .Site.Params.author }}">
+  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+  <meta property="og:description" content="{{ .Site.Params.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="{{ "images/photo.jpg" | absURL }}">
+  {{ if .Site.Params.mysite.discovery }}<meta name="generator-directory" content="GaryKing.org/mysite"><!-- mysite-directory-marker: garyking.org/mysite -->{{ end }}
+  <link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="32x32">
+  <link rel="icon" href="{{ "favicon-32x32.png" | relURL }}" type="image/png">
+  <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
+  {{ $css := resources.Get "css/style.css" | minify }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+</head>
